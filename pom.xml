@@ -115,7 +115,6 @@
 								<exclude>**/dto/**</exclude>
 								<exclude>**/model/**</exclude>
 								<exclude>**/entity/**</exclude>
-								<exclude>**/logging/**</exclude>
 								<exclude>**/ImportServiceApplication.class</exclude>
 							</excludes>
 							<rules>
