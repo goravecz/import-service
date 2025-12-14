@@ -1,3 +1,12 @@
 spring:
   application:
     name: import-service
+
+filesystem:
+  import-folder: /tmp/import-service/test/import
+  error-folder: /tmp/import-service/test/error
+
+scheduling:
+  redemption-import-cron: "*/3 * * * * *"  # Every 3 seconds (offset from export's 2 sec)
+  outpay-import-cron: "*/5 * * * * *"      # Every 5 seconds (offset from export's 4 sec)
+  own-and-ben-import-cron: "*/7 * * * * *" # Every 7 seconds (offset from export's 6 sec)

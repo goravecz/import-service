@@ -1,3 +1,12 @@
 spring:
   application:
     name: import-service
+
+filesystem:
+  import-folder: /tmp/export-service/uat/export
+  error-folder: /tmp/import-service/uat/error
+
+scheduling:
+  redemption-import-cron: "0 30 * * * *"    # Every hour at :30 (30 min after export)
+  outpay-import-cron: "0 30 */6 * * *"      # Every 6 hours at :30
+  own-and-ben-import-cron: "0 30 */12 * * *" # Every 12 hours at :30
